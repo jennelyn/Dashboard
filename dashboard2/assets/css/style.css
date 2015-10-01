@@ -1,10 +1,4 @@
-/*
-Template Name: DASHGUM FREE - Bootstrap 3.2 Admin Theme
-Template Version: 1.0
-Author: Carlos Alvarez
-Website: http://blacktie.co
-Premium: http://www.gridgum.com
-*/
+
 
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
@@ -26,14 +20,15 @@ ul li {
 a, a:hover, a:focus {
     text-decoration: none;
     outline: none;
+    color: #fff;
 }
 ::selection {
 
-    background: #68dff0;
+    background: #5256C1;
     color: #fff;
 }
 ::-moz-selection {
-    background: #68dff0;
+    background: #5256C1;
     color: #fff;
 }
 
@@ -44,13 +39,17 @@ a, a:hover, a:focus {
 
 /* Bootstrap Modifications */
 .modal-header {
-	background: #68dff0;
+	background: #5256C1;
 }
 
 .modal-title {
 	color: white;
 }
 
+.modal-body{
+    overflow: auto !important; 
+    height: 400px;
+}
 .btn-round {
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -2342,3 +2341,15 @@ label {
 .abt-us{
     margin-top: 40px;
 }
+
+/*.btn-md{
+    margin-top: -65px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+#myBModal{
+    margin-top: -65px;
+    margin-right: 35px;
+    margin-left: 35px;
+}*/
