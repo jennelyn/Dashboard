@@ -206,14 +206,14 @@
               	  <h5 class="centered">Jennelyn Medianista</h5>
               	  <li class="position"><p>POSITION</p></li>
                   <li class="mt">
-                      <a class="active" href="index.html">
-                          <i class="fa fa-home"></i>
+                      <a class="active" href="index.html" data-toggle="tooltip" title="Home" data-placement = "top"> 
+                      <i class="fa fa-home"></i>
                           <span>HOME</span>
                       </a>
                   </li>
-
+                    
                   <li class="sub-menu">
-                      <a href="javascript:;" >
+                      <a href="javascript:;" data-toggle="tooltip" title="See all your branches" data-placement = "top">
                           <i class="fa fa-shopping-cart"></i>
                           <span>Branches</span>
                       </a>
@@ -225,7 +225,7 @@
                   </li>
 
                   <li class="sub-menu">
-                      <a href="javascript:;" >
+                      <a href="javascript:;" data-toggle="tooltip" title="Monitor your income" data-placement = "top">
                           <i class="fa fa-money"></i>
                           <span>Sales</span>
                       </a>
@@ -236,7 +236,7 @@
                       </ul>
                   </li>
                   <li class="sub-menu">
-                      <a href="javascript:;" >
+                      <a href="javascript:;" data-toggle="tooltip" title="Monitor your stocks" data-placement = "top">
                           <i class="fa fa-database"></i>
                           <span>Inventory</span>
                       </a>
@@ -247,7 +247,7 @@
                       </ul>-->
                   </li>
                   <li class="sub-menu">
-                      <a href="javascript:;" >
+                      <a href="javascript:;" data-toggle="tooltip" title="Modify your account" data-placement = "top">
                           <i class="fa fa-cogs"></i>
                           <span>Maintenance</span>
                       </a>
@@ -323,14 +323,14 @@
   	  			          <span class="li_news"></span>
   	  			          <h3>+10</h3>
             			</div>
-  	  			      <p>More than 10 news were added in your reader.</p>
+  	  			      <p>News</p>
             		</div>
                 <div class="col-md-2 col-sm-2 box0">
                   <div class="box1">
   					  			<span class="li_data"></span>
   					  			<h3>OK!</h3>
                   </div>
-  					  		<p>Your server is working perfectly. Relax & enjoy.</p>
+  					  		<p>Monitor your stocks</p>
                 </div>
               </div>   	
            </div><!-- /row mt -->	
@@ -743,6 +743,10 @@
             var to = $("#" + id).data("to");
             console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
         }
+
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
     </script>
   
 
