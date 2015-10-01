@@ -20,7 +20,7 @@ ul li {
 a, a:hover, a:focus {
     text-decoration: none;
     outline: none;
-    color: #fff;
+    /*color: #fff;*/
 }
 ::selection {
 
@@ -2341,15 +2341,8 @@ label {
 .abt-us{
     margin-top: 40px;
 }
-
-/*.btn-md{
+.btn-md{
     margin-top: -65px;
     margin-right: 35px;
     margin-left: 35px;
 }
-
-#myBModal{
-    margin-top: -65px;
-    margin-right: 35px;
-    margin-left: 35px;
-}*/
