@@ -2319,6 +2319,7 @@ label {
 .submit-btn {
     width: 94%;
     margin: 8px;
+    color: #fff;
 }
 
 .form-container > form > div.form-group > label{
