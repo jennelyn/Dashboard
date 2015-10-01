@@ -2261,9 +2261,83 @@ label {
     font-size: 20px;
 }
 
+
+
 .breadcrumb {
     color: #ffffff;
-    .topp{
+}
+.topp{
+
     font-size: 24px;
     text-align: center;
+}
+
+.login-bg{
+    background: url('../img/login-bg-2.jpg') no-repeat fixed;
+    background-size: cover;
+    height: 1400px;
+ /*   margin-top: -100px*/
+}
+
+.login-header{
+    height: 100px;
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.login-footer{
+    background-color: #000;
+    color: #fff;
+    height: 300px;
+    position: absolute;
+    bottom: 1;
+    left: 0;
+    width: 100%;
+}
+.login-title p{
+    text-align: left;
+    font-size: 32px;
+    text-transform: uppercase;
+
+}
+
+.form-container{
+    width: 33%;
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+.form-container > form > div.form-group{
+    padding: 10px;
+    width: 100%;
+}
+
+.submit-btn {
+    width: 94%;
+    margin: 8px;
+}
+
+.form-container > form > div.form-group > label{
+    color: #fff;
+    font-size: 16px;
+}
+.tagline{
+    font-size: 32px;
+    font-style: italic;
+    margin: 30px;
+}
+.bot-footer{
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    background-color: #fff;
+    color: #000;
+    text-align: right;
+}
+.abt-us{
+    margin-top: 40px;
 }
