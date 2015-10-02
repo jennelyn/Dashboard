@@ -91,7 +91,7 @@
                       </ul>
                   </li>
                   <li class="sub-menu">
-                      <a href="inventory.html" data-toggle="tooltip" title="Monitor your stocks" data-placement = "top">
+                      <a href="#" data-toggle="tooltip" title="Monitor your stocks" data-placement = "top">
                           <i class="fa fa-database"></i>
                           <span>Inventory</span>
                       </a>
@@ -103,7 +103,7 @@
                           <span>Maintenance</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="#">User</a></li>
+                          <li><a  href="#" class="fa fa-user"><span > User </span></a></li>
                       </ul>
                   </li> 
                   <!--<li class="sub-menu">
@@ -141,7 +141,7 @@
           <section class="wrapper">
           <div class="breadcrumb"> 
             <!--<h3><i class="fa fa-angle-right"></i> Branch<sub>MOA</sub> </h3>-->
-             <p class="title">MONITOR YOUR BRANCHES</p>
+             <p class="title">MONITOR YOUR STOCKS</p>
           </div>
           	
 				<div class="row">
@@ -152,41 +152,56 @@
                       <div class="content-panel col-md-12">
                       <div class="table-responsive">
                          <table class="table table-striped table-advance table-hover">
-                            <h4><i class="fa fa-angle-right">BRANCH</i> </h4>
+                            <h4><i class="fa fa-angle-right">PRODUCTS</i> </h4>
                             <hr>
                               <thead>
                               <tr>
-                                  <th><i class="fa fa-home"></i> Branch</th>
-                                  <th ><i class="fa fa-map-marker"></i> Location</th>
+                                  <th><i class="fa fa-home"></i>Barcode</th>
+                                  <th ><i class="fa fa-map-marker"></i> Product Name</th>
+                                  <th ><i class="fa fa-users"></i> Supplier Name</th>
+                                  <th ><i class="fa fa-archive"></i> Remaining Stock</th>
+                                  <th ><i class="fa fa-truck"></i> Total Receive</th>
                               </tr>
                               </thead>
                               <tbody>
                               <tr>
-                                  <td><a  data-toggle="modal" data-target="#myAmount" style="cursor:pointer">Company Ltd</a></td>
-                                  <td >Lorem Ipsum dolor</td>
+                                  <td>74283747274897482</td>
+                                  <td >Rubber Shoes</td>
+                                  <td >Adiddas</td>
+                                  <td >20</td>
+                                  <td >100</td>
                               </tr>
                               <tr>
                                   <td>
-                                        <a data-toggle = "modal" data-target = "#my1Amount" style="cursor:pointer">Dashgum co</a>  
+                                      f8r7287927r 
                                   </td>
-                                  <td >Lorem Ipsum dolor</td>
+                                  <td >Tennis Ball</td>
+                                  <td >Lining</td>
+                                  <td >30</td>
+                                  <td >90</td>
                               </tr>
                               <tr>
                                   <td>
-                                      <a data-toggle = "modal" data-target = "#my2Amount" style="cursor:pointer">Another Co</a>
+                                   g4672676dsd7
                                   </td>
-                                  <td >Lorem Ipsum dolor</td>
+                                  <td >Socks</td>
+                                  <td >Nike</td>
+                                  <td >40</td>
+                                  <td >100</td>
                               </tr>
                               <tr>
                                   <td>
-                                    <a data-toggle = "modal" data-target = "#my3Amount" style="cursor:pointer">Dashgum ext</a>
+                                    q2314352rfd3r3r
                                   </td>
-                                  <td >Lorem Ipsum dolor</td>
+                                  <td>Soccer Ball</td>
+                                  <td >Molten</td>
+                                  <td >50</td>
+                                  <td >100</td>
                               </tr>
-                              <tr>
+                              <!--<tr>
                                   <td>Total Ltd </td>
-                                  <td >Lorem Ipsum dolor</td>
-                              </tr>
+                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
+                              </tr> -->
                               </tbody>
                           </table>
                       </div>
@@ -195,123 +210,7 @@
                   </div><!-- /col-md-12 -->
               </div><!-- /row -->
 
-               <!-- Modal -->
-                    <div id="myAmount" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                   <!-- Modal content-->
-                    <div class="modal-content">
-                     <div class="modal-header" >
-                      <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                       <h4 class="modal-title">Company ltd</h4>
-                      </div>
-                      <div class="modal-body">
-                        <table class="table table-striped table-advance table-hover">
-                          <thead>
-                              <tr>
-                                  <th><i class="fa fa-money"></i> Sales </th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th>Date</th>
-                                  <th>Profit</th>
-                                </tr>
-                              </tbody>
-                        </table>
-                      </div>
-                    <div class="modal-footer">
-                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="my1Amount" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                   <!-- Modal content-->
-                    <div class="modal-content">
-                     <div class="modal-header" >
-                      <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                       <h4 class="modal-title">Dashgum Co</h4>
-                      </div>
-                      <div class="modal-body">
-                        <table class="table table-striped table-advance table-hover">
-                          <thead>
-                              <tr>
-                                  <th><i class="fa fa-money"></i> Sales </th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th>Date</th>
-                                  <th>Profit</th>
-                                </tr>
-                              </tbody>
-                        </table>
-                      </div>
-                    <div class="modal-footer">
-                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-                 <div id="my2Amount" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                   <!-- Modal content-->
-                    <div class="modal-content">
-                     <div class="modal-header" >
-                      <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                       <h4 class="modal-title">Another Co</h4>
-                      </div>
-                      <div class="modal-body">
-                        <table class="table table-striped table-advance table-hover">
-                          <thead>
-                              <tr>
-                                  <th><i class="fa fa-money"></i> Sales </th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th>Date</th>
-                                  <th>Profit</th>
-                                </tr>
-                              </tbody>
-                        </table>
-                      </div>
-                    <div class="modal-footer">
-                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-                 <div id="my3Amount" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                   <!-- Modal content-->
-                    <div class="modal-content">
-                     <div class="modal-header" >
-                      <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                       <h4 class="modal-title">Dashgum Ext</h4>
-                      </div>
-                      <div class="modal-body">
-                        <table class="table table-striped table-advance table-hover">
-                          <thead>
-                              <tr>
-                                  <th><i class="fa fa-money"></i> Sales </th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th>Date</th>
-                                  <th>Profit</th>
-                                </tr>
-                              </tbody>
-                        </table>
-                      </div>
-                    <div class="modal-footer">
-                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+              
 
 
 		</section><! --/wrapper -->
