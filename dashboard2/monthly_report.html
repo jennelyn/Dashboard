@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Dashboard">
-    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <meta name="Jennelyn Medianista" content="Dashboard">
+    <meta name="keyword" content="">
 
     <title>IBS</title>
 
@@ -13,11 +13,16 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-        
+    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">    
+    
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
 
+    <script src="assets/js/chart-master/Chart.js"></script>
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -40,10 +45,10 @@
             <a href="index.html" class="logo"><b>IBS</b></a>
             <!--logo end-->
             <div class="top-menu">
-              <ul class="nav pull-right top-menu">
+            	<ul class="nav pull-right top-menu">
                     <!--<li class="position"><p>POSITION</p></li> -->
                     <li><a class="logout" href="login.html">Logout</a></li>
-              </ul>
+            	</ul>
             </div>
         </header>
       <!--header end-->
@@ -52,14 +57,14 @@
       MAIN SIDEBAR MENU
       *********************************************************************************************************************************************************** -->
       <!--sidebar start-->
-     <aside>
+      <aside>
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
                   
-                  <p class="centered"><a href="profile.html"><img src="assets/img/ui-ibs.png" width="70"></a></p>
-                  <h5 class="centered">Jennelyn Medianista</h5>
-                  <li class="position"><p>POSITION</p></li>
+              	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-ibs.png" width="70"></a></p>
+              	  <h5 class="centered">Jennelyn Medianista</h5>
+              	  <li class="position"><p>POSITION</p></li>
                   <li class="mt">
                       <a class="active" href="index.html" data-toggle="tooltip" title="Home" data-placement = "top"> 
                       <i class="fa fa-home"></i>
@@ -76,18 +81,22 @@
                           <li><a  href="basic_table.html">MOA</a></li>
                           <li><a  href="#">MEGAMALL</a></li>
                           <li><a  href="#">GREEN BELT</a></li>
-                      </ul> -->
+                      </ul>-->
                   </li>
 
                   <li class="sub-menu">
-                      <a href="sales.html" data-toggle="tooltip" title="Monitor your income" data-placement = "top">
+                      <a href="javascript:;" data-toggle="tooltip" title="Monitor your income" data-placement = "top">
                           <i class="fa fa-money"></i>
                           <span>Sales</span>
                       </a>
-                     
+                      <ul class="sub">
+                          <li><a  href="#">Monthly</a></li>
+                          <li><a  href="#">Yearly</a></li>
+                          <!--<li><a  href="#">Todo List</a></li> -->
+                      </ul>
                   </li>
                   <li class="sub-menu">
-                      <a href="#" data-toggle="tooltip" title="Monitor your stocks" data-placement = "top">
+                      <a href="inventory.html" data-toggle="tooltip" title="Monitor your stocks" data-placement = "top">
                           <i class="fa fa-database"></i>
                           <span>Inventory</span>
                       </a>
@@ -106,29 +115,9 @@
                           <span>Account Setting</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="setting.html" class="fa fa-user"> User</a></li>
-                      </ul>
-                  </li> 
-                  <!--<li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class="fa fa-th"></i>
-                          <span>Data Tables</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="basic_table.html">Basic Table</a></li>
-                          <li><a  href="responsive_table.html">Responsive Table</a></li>
+                          <li><a  href="setting.html" class="fa fa-user">User</a></li>
                       </ul>
                   </li>
-                  <li class="sub-menu">
-                      <a href="javascript:;" >
-                          <i class=" fa fa-bar-chart-o"></i>
-                          <span>Charts</span>
-                      </a>
-                      <ul class="sub">
-                          <li><a  href="morris.html">Morris</a></li>
-                          <li><a  href="chartjs.html">Chartjs</a></li>
-                      </ul>
-                  </li>-->
 
               </ul>
               <!-- sidebar menu end-->
@@ -142,109 +131,99 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
-          <div class="breadcrumb"> 
-            <!--<h3><i class="fa fa-angle-right"></i> Branch<sub>MOA</sub> </h3>-->
-             <p class="title">MONITOR YOUR STOCKS</p>
-          </div>
-          	
-				<div class="row">
-				</div><!-- row -->
 
-              <div class="row mt">
-                  <div class="col-md-12">
-                      <div class="content-panel col-md-12">
-                      <div class="table-responsive">
-                         <table class="table table-striped table-advance table-hover">
-                            <h4><i class="fa fa-angle-right">PRODUCTS</i> </h4>
-                            <hr>
-                              <thead>
-                              <tr>
-                                  <th><i class="fa fa-home"></i>Barcode</th>
-                                  <th ><i class="fa fa-map-marker"></i> Product Name</th>
-                                  <th ><i class="fa fa-users"></i> Supplier Name</th>
-                                  <th ><i class="fa fa-archive"></i> Remaining Stock</th>
-                                  <th ><i class="fa fa-truck"></i> Total Receive</th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                              <tr>
-                                  <td>74283747274897482</td>
-                                  <td >Rubber Shoes</td>
-                                  <td >Adiddas</td>
-                                  <td >20</td>
-                                  <td >100</td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      f8r7287927r 
-                                  </td>
-                                  <td >Tennis Ball</td>
-                                  <td >Lining</td>
-                                  <td >30</td>
-                                  <td >90</td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                   g4672676dsd7
-                                  </td>
-                                  <td >Socks</td>
-                                  <td >Nike</td>
-                                  <td >40</td>
-                                  <td >100</td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                    q2314352rfd3r3r
-                                  </td>
-                                  <td>Soccer Ball</td>
-                                  <td >Molten</td>
-                                  <td >50</td>
-                                  <td >100</td>
-                              </tr>
-                              <!--<tr>
-                                  <td>Total Ltd </td>
-                                  <td class="hidden-phone">Lorem Ipsum dolor</td>
-                              </tr> -->
-                              </tbody>
-                          </table>
-                      </div>
-                         
-                      </div><!-- /content-panel -->
-                  </div><!-- /col-md-12 -->
-              </div><!-- /row -->
-
-              
+              <div class="row">
+                  <div class="col-lg-12 main-chart">
+                  <div class="breadcrumb">
+                    <p class="title">CENTRAL SERVER  <sub> POWER TO CONNECT IN ALL OF YOUR BRANCHES</sub></p>  
+                    </div>
+            <div class="row mtbox">
+              <div class="resp-div">
+                  </div>
+                      <div class="dropdown">
+                         <label>Select Month:</label>
+                  		 <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">MONTH
+                       <span class="caret"></span></button>
+                  	
+                  		<div class="col-md-2 col-sm-2 box0">
+                  		</div>
+                  	
+                  	</div><!-- /row mt -->	
+                    
+                      	
 
 
-		</section><!--/wrapper -->
-      </section><!-- /MAIN CONTENT -->
-
-      <!--main content end-->
-      <!--footer start-->
-      <!--footer end-->
+               				
+					<div class="container">
+						<!-- TWITTER PANEL -->
+						<!-- /col-md-4 -->
+					</div><!-- /row -->
+					
+                  </div><!-- /col-lg-9 END SECTION MIDDLE -->
+                  </div><!-- /col-lg-3 -->
+              </div><!--/row -->
+          </section>
+      </section>
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-1.8.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.sparkline.js"></script>
 
 
     <!--common script for all pages-->
     <script src="assets/js/common-scripts.js"></script>
+    
+    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
 
     <!--script for this page-->
-    
-  <script>
-      //custom select box
+    <script src="assets/js/sparkline-chart.js"></script>    
+	<script src="assets/js/zabuto_calendar.js"></script>
+	<script type="application/javascript">
+        $(document).ready(function () {
+            $("#date-popover").popover({html: true, trigger: "manual"});
+            $("#date-popover").hide();
+            $("#date-popover").click(function (e) {
+                $(this).hide();
+            });
+        
+            $("#my-calendar").zabuto_calendar({
+                action: function () {
+                    return myDateFunction(this.id, false);
+                },
+                action_nav: function () {
+                    return myNavFunction(this.id);
+                },
+                ajax: {
+                    url: "show_data.php?action=1",
+                    modal: true
+                },
+                legend: [
+                    {type: "text", label: "Special event", badge: "00"},
+                    {type: "block", label: "Regular event", }
+                ]
+            });
+        });
+        
+        
+        function myNavFunction(id) {
+            $("#date-popover").hide();
+            var nav = $("#" + id).data("navigation");
+            var to = $("#" + id).data("to");
+            console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+        }
 
-      $(function(){
-          $('select.styled').customSelect();
-      });
-
-  </script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
+  
 
   </body>
 </html>
